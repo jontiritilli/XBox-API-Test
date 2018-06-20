@@ -1,0 +1,20 @@
+{
+  "name": "xbox-api-test",
+  "version": "1.0.0",
+  "description": "testing access to xbox api",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/jontiritilli/XBox-API-Test.git"
+  },
+  "author": "Jonathan Tiritilli and Nick Beckley",
+  "license": "ISC"
+}
