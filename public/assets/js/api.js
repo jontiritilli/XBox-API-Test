@@ -48,7 +48,8 @@ function httpsRequest(xuid) {
     dataType: 'JSON',
     success: res => {
       const titles = res.titles.sort(function(a,b) {
-        return a.lastPlayed - b.lastPlayed;
+        var x = a.lastPlayed; var y = b.lastPlayed;
+        return ((x > y) ? -1 : ((x < y) ? 1 : 0));
       });
       console.log(res);
       console.log(titles);
@@ -66,7 +67,8 @@ function httpsRequest(xuid) {
     dataType: 'JSON',
     success: res => {
       const titles = res.titles.sort(function(a,b) {
-        return a.lastUnlocked - b.lastUnlocked;
+        var x = a.lastUnlock; var y = b.lastUnlock;
+        return ((x > y) ? -1 : ((x < y) ? 1 : 0));
       });
       console.log(res);
       console.log(titles);
