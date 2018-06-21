@@ -2,8 +2,10 @@ const express = require('express');
 
 const app = express();
 
-app.get('/', function(req, res){
-  res.send('hello world');
+app.use(express.static('../public'));
+
+app.get('/', function(request, response){
+  response.send('Hello World');
 })
 
 const PORT = process.env.port || 9000;
